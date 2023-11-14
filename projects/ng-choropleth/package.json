@@ -1,6 +1,6 @@
 {
   "name": "ng-choropleth",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "https://github.com/msanthoshofficial/ng-choropleth"
@@ -15,7 +15,6 @@
   ],
   "author": "Santhosh M",
   "license": "MIT",
-  "files": ["dist"],
   "peerDependencies": {
     "@angular/common": "^17.0.0",
     "@angular/core": "^17.0.0"
