@@ -1,0 +1,27 @@
+{
+  "name": "ng-choropleth",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msanthoshofficial/ng-choropleth"
+  },
+  "description": "A simple Interactive Choropleth Map Library for Angular",
+  "keywords": [
+    "angular",
+    "choropleth",
+    "maps",
+    "visualization",
+    "GeoMap"
+  ],
+  "author": "Santhosh M",
+  "license": "MIT",
+  "files": ["dist"],
+  "peerDependencies": {
+    "@angular/common": "^17.0.0",
+    "@angular/core": "^17.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
