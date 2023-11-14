@@ -1,24 +1,51 @@
-# NgChoropleth
+# ng-choropleth-map
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+[![Version](https://img.shields.io/npm/v/ng-choropleth.svg)](https://www.npmjs.com/package/ng-choropleth)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-## Code scaffolding
+**Interactive Choropleth Map Library for Angular**
 
-Run `ng generate component component-name --project ng-choropleth` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-choropleth`.
-> Note: Don't forget to add `--project ng-choropleth` or else it will be added to the default project in your `angular.json` file. 
+The ng-choropleth-map library is a versatile and user-friendly tool for integrating interactive choropleth maps into your Angular applications. Whether you're visualizing geographical data, tracking regional statistics, or presenting complex information, this library simplifies the process and enhances your application's data visualization capabilities.
 
-## Build
+## Features
 
-Run `ng build ng-choropleth` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular Integration:** Seamless integration with Angular applications.
+- **SVG Rendering:** Utilizes scalable and responsive SVG for map rendering.
+- **Customizable Styling:** Easily customize the appearance, color schemes, and data representations.
+- **Data Binding:** Dynamically bind data for real-time visualizations and updates.
+- **Interactive Elements:** Incorporate tooltips, click events, and other interactive features.
+- **Lightweight:** Designed for efficiency, ensuring a smooth user experience.
 
-## Publishing
+## Getting Started
 
-After building your library with `ng build ng-choropleth`, go to the dist folder `cd dist/ng-choropleth` and run `npm publish`.
+### Installation
 
-## Running unit tests
+Install the library using npm:
 
-Run `ng test ng-choropleth` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm install ng-choropleth
+```
 
-## Further help
+### USAGE
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Import the module into your Angular application component.ts file:
+
+```ts
+import { NgChoroplethComponent } from "ng-choropleth";
+
+@NgModule({
+  imports: [NgChoroplethComponent],
+  //...
+})
+export class YourComponent {}
+```
+
+Use the lib-ng-choropleth component in your templates:
+
+```html
+<ng-choropleth-map [data]="yourGeoJSONData"></ng-choropleth-map>
+```
+
+## License
+
+[MIT License]() © Santhosh M
