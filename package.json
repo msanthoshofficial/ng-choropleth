@@ -21,9 +21,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production",
-    "watch": "ng build --watch --configuration development",
-    "dev":"ng build ng-choropleth --watch",
+    "build": "ng build ng-choropleth --configuration production",
+    "watch": "ng build ng-choropleth --watch --configuration development",
     "test": "ng test"
   },
   "private": false,
