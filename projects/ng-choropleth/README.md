@@ -1,11 +1,11 @@
-# ng-choropleth-map
+# ng-choropleth
 
 [![Version](https://img.shields.io/npm/v/ng-choropleth.svg)](https://www.npmjs.com/package/ng-choropleth)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 **Interactive Choropleth Map Library for Angular**
 
-The ng-choropleth-map library is a versatile and user-friendly tool for integrating interactive choropleth maps into your Angular applications. Whether you're visualizing geographical data, tracking regional statistics, or presenting complex information, this library simplifies the process and enhances your application's data visualization capabilities.
+The ng-choropleth library is a versatile and user-friendly tool for integrating interactive choropleth maps into your Angular applications. Whether you're visualizing geographical data, tracking regional statistics, or presenting complex information, this library simplifies the process and enhances your application's data visualization capabilities.
 
 ## Features
 
@@ -43,7 +43,7 @@ export class YourComponent {}
 Use the lib-ng-choropleth component in your templates:
 
 ```html
-<ng-choropleth-map [data]="yourGeoJSONData"></ng-choropleth-map>
+<ng-choropleth [options]="options"></ng-choropleth>
 ```
 
 ## License

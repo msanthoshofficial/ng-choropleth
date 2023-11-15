@@ -8,7 +8,7 @@ import {
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'lib-ng-choropleth',
+  selector: 'ng-choropleth',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './ng-choropleth.component.html',
