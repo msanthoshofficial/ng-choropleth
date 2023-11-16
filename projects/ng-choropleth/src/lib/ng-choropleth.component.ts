@@ -4,10 +4,12 @@ import {
   Output,
   ElementRef,
   EventEmitter,
+  OnInit,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ChartOptions } from './types';
+import { ChartOptions, mapData } from './types';
+import { NgChoroplethService } from './ng-choropleth.service';
 
 @Component({
   selector: 'ng-choropleth',
@@ -16,12 +18,21 @@ import { ChartOptions } from './types';
   templateUrl: './ng-choropleth.component.html',
   styleUrl: './ng-choropleth.component.css',
 })
-export class NgChoroplethComponent {
+export class NgChoroplethComponent implements OnInit {
   @Input() ChartOptions: ChartOptions | undefined;
   @Output() clickEvent: EventEmitter<MouseEvent> = new EventEmitter();
   private viewbox = '0 0 1008 651';
   private scale = 1.0;
-  constructor(private el: ElementRef) {}
+  protected data!: mapData[];
+  constructor(
+    private el: ElementRef,
+    private ngChoroplethService: NgChoroplethService
+  ) {}
+
+  ngOnInit(): void {
+    this.data = this.ngChoroplethService.mapData();
+  }
+
   mouseClick(event: MouseEvent) {
     const clickedElement = event.target as any;
 

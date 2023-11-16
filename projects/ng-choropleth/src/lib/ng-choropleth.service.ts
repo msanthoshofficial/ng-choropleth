@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+import { data } from './data';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class NgChoroplethService {
-
-  constructor() { }
+  constructor() {}
+  mapData() {
+    return data;
+  }
 }

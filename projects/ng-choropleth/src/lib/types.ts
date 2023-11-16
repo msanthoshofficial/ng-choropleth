@@ -186,3 +186,8 @@ export interface ChartOptions {
   theme?: theme;
   config?: country[] | countryConfig | countryConfig[];
 }
+export interface mapData {
+  id: string;
+  title: string;
+  d: string;
+}
