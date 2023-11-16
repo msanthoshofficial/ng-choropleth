@@ -7,6 +7,8 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { ChartOptions } from './types';
+
 @Component({
   selector: 'ng-choropleth',
   standalone: true,
@@ -15,7 +17,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './ng-choropleth.component.css',
 })
 export class NgChoroplethComponent {
-  @Input() data: any[] = [];
+  @Input() ChartOptions: ChartOptions | undefined;
   @Output() clickEvent: EventEmitter<MouseEvent> = new EventEmitter();
   private viewbox = '0 0 1008 651';
   private scale = 1.0;
